@@ -10,7 +10,6 @@ if response.status_code == 200:
     testimonials=soup.find_all('div',class_='testimonial-card')     
     print(f"{'Name':<25} | {'Department'}")
     print("-" * 50)
-
     for item in testimonials:
         name=item.find('h4').text.strip() if item.find('h4') else "N/A"
         department=item.find('p').text.strip() if item.find('p') else "N/A"
