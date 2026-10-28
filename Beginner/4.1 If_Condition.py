@@ -10,7 +10,6 @@ try:
         print('BMI result: "Normal"')
     else:
         print('BMI result: "Underweight"')
-
 except ValueError:
     print("Input error: Please make sure to input numbers only.")
 except ZeroDivisionError:
