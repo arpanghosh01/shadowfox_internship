@@ -74,7 +74,6 @@ def play_hangman():
     print("=========================================")
     print("           WELCOME TO HANGMAN            ")
     print("==============BY                       ARPAN==============")
-
     category, secret_word=get_random_word(WORDS_WITH_HINTS)
     missed_letters=[]
     correct_letters=[]
